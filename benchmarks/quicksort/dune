@@ -1,0 +1,10 @@
+(executable
+ (name qsort)
+ (modules qsort)
+
+ (libraries containers domainslib)
+ (modes native))
+
+ (alias (name buildbench) (deps qsort.exe))
+ (alias (name multibench_parallel)
+       (deps qsort.exe))

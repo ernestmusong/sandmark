@@ -62,7 +62,7 @@ WRAPPER = $(patsubst run_%,%,$(RUN_BENCH_TARGET))
 PACKAGES = sexplib0 re yojson react uuidm cpdf nbcodec minilight cubicle orun rungen eventlog-tools
 
 ifeq ($(findstring multibench,$(BUILD_BENCH_TARGET)),multibench)
-	PACKAGES +=  lockfree kcas domainslib ctypes
+	PACKAGES +=  lockfree kcas domainslib ctypes containers
 else
 	PACKAGES += ctypes js_of_ocaml-compiler
 endif
